@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CS50x Courses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="static/layout.css" type="text/css" />
+<!--<script type="text/javascript" src="templates/layout/scripts/jquery.min.js"></script>-->
+<!--<script type="text/javascript" src="templates/layout/scripts/jquery.slidepanel.setup.js"></script>-->
+<!--<script type="text/javascript" src="templates/layout/scripts/jquery.ui.min.js"></script>-->
+<!--<script type="text/javascript" src="templates/layout/scripts/jquery.tabs.setup.js"></script>-->
+
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+    <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">Logout &raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="{{ url_for('logout') }}">Good Bye</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="index.html">CS50x Courses</a></h1>
+      <p>cs50 Final Project</p>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li class="last"><a href="https://cs50.harvard.edu/">CS50 Website</a></li>
+        <li><a href="mailto:malan@harvard.edu">David j Malan</a></li>
+        <li><a href="https://ide.cs50.io/"> ide</a></li>
+      </ul>
+      <p>Mail: malan@harvard.edu</p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+      <li class="active"><a href="#">Home</a>
+        <ul>
+        <li><marquee style="color:white; size:10%; padding-top:6%;">Welcome {{user}} at CS50x Courses</marquee></li>
+        </ul>
+      </li>
+      <li><a href=" quora.com/topic/Harvard-CS50 /">CS50 Quora</a>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor</a></li>
+          <li><a href="#">Suspendisse in neque</a></li>
+          <li class="last"><a href="#">Praesent et eros</a></li>
+        </ul>
+      </li>
+      <li><a href="https://cs50.harvard.edu">CS50 Website</a>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor</a></li>
+          <li><a href="#">Suspendisse in neque</a></li>
+          <li class="last"><a href="#">Praesent et eros</a></li>
+        </ul>
+      </li>
+      <li><a href="https://ide.cs50.io">CS50 ide</a></li>
+      <li class="last"><a href="https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA">CS50 on Youtube</a></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper col3">
+  <div id="featured_slide">
+    <div id="featured_wrap">
+      <ul id="featured_tabs">
+        <li><a href="#fc1">CS50 intro to Computer Science<br />
+         <span><strong>For: </strong>anyone with or without programming experience</span></a></li>
+        <li><a href="#fc2">CS50 Advanced Principle<br />
+         <span><strong>For: </strong>students in high school.</span></a></li>
+        <li><a href="#fc3">CS50 undersatnding Technology<br />
+         <span><strong>For: </strong>who work with technology every day.</span></a></li>
+        <li class="last"><a href="#fc4">CS50 for Business Professionals<br />
+         <span></span><strong>For: </strong>business professionals.</span></a></li>
+        </ul>
+      <div id="featured_content">
+        <div class="featured_box" id="fc1"><img src="static/images/demo/cs.jpg" alt="" />
+          <div class="floater"><a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">Visit the course &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc2"><img src="static/images/demo/cs50.jpg" alt="" />
+          <div class="floater"><a href="https://www.edx.org/course/cs50s-apr-computer-science-principles-harvardx-cs50-ap">Visit the course &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc3"><img  src="static/images/demo/cs50understanding.jpg" alt="" />
+          <div class="floater"><a href="https://www.edx.org/course/cs50s-understanding-technology">Visit the course &raquo;</a></div>
+        </div>
+        <div class="featured_box" id="fc4"><img   src="static/images/demo/david.jpg" alt="" />
+          <div class="floater"><a href="#">Visit the course &raquo;</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container">
+    <div id="hpage">
+
+      <center><h1 style="font-size:300%">CS50x offline </h1></center>
+
+      <ul>
+        <li>
+          <h2>CS50 in Arabic</h2>
+          <div class="imgholder"><a href="#"><img style="width:200px; height:140px;" src="static/images/demo/cs50ar.JPG" alt="" /></a></div>
+          <p>This is  <a href="https://www.facebook.com/Cs50inArabic/">CS50 in Arabic </a> Community to teach cs50 in all Univerisities and Institutes of Egypt</p>
+          <p class="readmore"><a href="https://www.facebook.com/Cs50inArabic/">Visit the Commuity &raquo;</a></p>
+        </li>
+        <li>
+          <h2>CS50x Miami </h2>
+          <div class="imgholder"><a href="#"><img style="width:200px; height:140px;" src="static/images/demo/miami.jpg" alt="" /></a></div>
+          <p>This is a a Miami community <a href="https://www.facebook.com/CS50xMIAMI/?ref=br_rs">CS50xMiami</a>a locally version of Harvard’s CS50 class, plus supplemental coursework in topics</p>
+          <p class="readmore"><a href="https://www.facebook.com/CS50xMIAMI/?ref=br_rs">Visit the Commuity &raquo;</a></p>
+        </li>
+        <li>
+          <h2>Alama</h2>
+          <div class="imgholder"><a href="#"><img style="width:200px; height:140px;" src="static/images/demo/puzzle-1.png" alt="" /></a></div>
+          <p><a href="https://www.facebook.com/3lamaEG/">Alama</a> is an initiative that aims at providing high-quality learning experiences through offering MOOCs in a blended/flipped format..</p>
+          <p class="readmore"><a href="https://www.facebook.com/3lamaEG/">Visit the Commuity &raquo;</a></p>
+        </li>
+        <li class="last">
+          <h2>CS50x ni </h2>
+          <div class="imgholder"><a href="#"><img style="width:200px; height:140px;" src="static/images/demo/cs50xni.jpg" alt="" /></a></div>
+          <p><a href="http://code-fu.net.ni/cs50x-ni/">CS50x.ni</a> es un programa de Fundación Uno con la colaboración de la Universidad Nacional de Ingeniería UNI, basado en el curso CS50 de Harvard University. .</p>
+          <p class="readmore"><a href="http://code-fu.net.ni/cs50x-ni/">Visit the Commuity &raquo;</a></p>
+        </li>
+      </ul>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="footer">
+    <div id="newsletter">
+      <h2>CS50 Staff!</h2>
+      <p>Join at CS50 Staff href><a href="https://docs.google.com/forms/d/e/1FAIpQLSds8o1naxJCt4FSrqJusWvCHF9DNldweHrZKGVg1H_l09lZuQ/viewform">click here &raquo;</a></p>
+    </div>
+    <div class="footbox">
+      <h2>CS50 Hackathon</h2>
+      <ul>
+        <li><a href="#"> The CS50 Hackathon </a></li>
+        <li><a href="#"> which you can dive into your</a></li>
+        <li><a href="#">final project’s implementation</a></li>
+        <li><a href="#">alongside classmates and staff.</a></li>
+        <li class="last"><a href="#">Praesent et eros</a></li>
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>CS50 Puzzle Day</h2>
+      <ul>
+        <li><a href="#">The goal is to send a message that computer science isn’t</a></li>
+        <li><a href="#">about programming, as many might think</a></li>
+        <li><a href="#">but about problem-solving more generally </a></li>
+
+      </ul>
+    </div>
+    <div class="footbox">
+      <h2>CS50 Fair</h2>
+      <ul> The CS50 Fair is an epic display of CS50 students' final projects. On display will be web apps, mobile apps, and more, all made by students.
+
+
+        <li><a href="#">Come see friends. Come chat with alumni,</a></li>
+        <li><a href="#">engineers, and recruiters. Squeeze a CS50 stress ball. Eat popcorn,</a></li>
+        <li><a href="#">candy, and even cotton candy. Win fabulous</a></li>
+        <li><a href="#">prizes in the raffle.</a></li>
+
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Mido &copy; 2018 - All Rights Reserved - <a href="https://www.linkedin.com/in/mohamedessamomar/">Mido</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

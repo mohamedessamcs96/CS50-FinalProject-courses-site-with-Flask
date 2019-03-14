@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+        <meta charset="utf-8"/>
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+
+        <!-- documentation at http://getbootstrap.com/, alternative themes at https://www.bootstrapcdn.com/bootswatch/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="static/layout.css" type="text/css" />
+        <title>CS50x Courses {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper col0">
+          <div id="topbar">
+            <div id="slidepanel">
+            <br class="clear" />
+            </div>
+            <div id="loginpanel">
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        {% if not session.user_id %}
+                            <ul  class="nav navbar-nav navbar-right">
+
+                                <li><a  href="{{ url_for('register') }}">Register</a></li>
+                                <li><a  href="{{ url_for('login') }}">Log In</a></li>
+                            </ul>
+                        {% endif %}
+                    </div>
+            </div>
+            <br class="clear" />
+          </div>
+        </div>
+
+        <div class="wrapper col1">
+          <div id="header">
+            <div id="logo">
+
+              <h1><a href="index.html"> CS50x Courses</a></h1>
+              <p>cs50 Final Project</p>
+            </div>
+            <div class="fl_right">
+              <ul>
+                <li class="last"><a href="https://cs50.harvard.edu/">CS50 Website</a></li>
+                <li><a href="mailto:malan@harvard.edu">David j Malan</a></li>
+                <li><a href="https://ide.cs50.io/"> ide</a></li>
+              </ul>
+              <p>Mail: malan@harvard.edu</p>
+            </div>
+            <br class="clear" />
+          </div>
+        </div>
+
+        <div class="wrapper col2">
+          <div id="topnav">
+            <ul>
+                <li><marquee style="color:white; size:10%; padding-top:25%;">Welcome {{user}} at CS50x Courses</marquee></li>
+            </ul>
+
+          </div>
+        </div>
+
+
+             <div class="container">
+                <div>
+
+                <center style="padding-top:0%"><img  src="static/images/demo/submit.png" width="200px" height="200px">
+                <h5>Join at CS50x Students</h5>
+                <h1></h1>
+            {% if get_flashed_messages() %}
+                <header>
+                    <div class="alert alert-info" role="alert">
+                        {{ get_flashed_messages() | join(" ") }}
+                    </div>
+                </header>
+            {% endif %}
+
+            <main>
+                {% block main %}{% endblock %}
+            </main>
+            </center>
+            </div>
+            </div>
+
+    </body>
+
+</html>
